@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "server-bootstrap"
+version = "0.1.0"
+description = "Automated provisioning script for Ubuntu servers on OCI"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+# Linting & formatting — install with: poetry install --with dev
+ruff = "^0.4.0"
+black = "^24.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
